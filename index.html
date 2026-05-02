@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Federico Fernández | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <h1 id="nombrePrincipal">Federico Fernández</h1>
+            <p>Estudiante de 2° año de Programación</p>
+        </div>
+
+        <nav class="nav">
+            <a href="#inicio">Inicio</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <button id="modoBtn" class="btn-accion">Modo oscuro</button>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="hero-contenido">
+                <h2>Hola, soy Federico Fernández</h2>
+                <p>
+                    Estudiante de Programación, con experiencia en C#, Java y JavaScript.
+                    Trabajo con Visual Studio Code, Visual Studio 2022 y SQL Server Management 2021.
+                </p>
+                <button id="cambiarNombre" class="btn-accion">Personalizar nombre</button>
+            </div>
+        </section>
+
+        <section id="sobre-mi" class="seccion">
+            <h2>Sobre mí</h2>
+            <p>
+                Soy estudiante de segundo año de la Tecnicatura Universitaria en Programación.
+                Me interesa el desarrollo de software, la lógica de programación y la creación de sistemas útiles para resolver problemas reales.
+            </p>
+
+            <div class="tarjetas">
+                <article class="card">
+                    <h3>Lenguajes</h3>
+                    <p>C#, Java y JavaScript.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Herramientas</h3>
+                    <p>Visual Studio Code, Visual Studio 2022 y SQL Server Management 2021.</p>
+                </article>
+
+                <article class="card">
+                    <h3>Experiencia</h3>
+                    <p>Trabajo con Git y GitHub para control de versiones y publicación de proyectos.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="proyectos" class="seccion">
+            <h2>Proyectos</h2>
+
+            <div class="tarjetas">
+                <article class="card proyecto">
+                    <h3>System Medic Simoca</h3>
+                    <p>Sistema de turnos médicos desarrollado como proyecto académico/práctico.</p>
+                    <button class="btn-ver" data-proyecto="system">Ver más</button>
+                    <p class="detalle-proyecto oculto" id="detalle-system">
+                        Proyecto orientado a la gestión de turnos y organización de pacientes.
+                    </p>
+                </article>
+
+                <article class="card proyecto">
+                    <h3>ComedGO Escolar</h3>
+                    <p>Aplicación de escritorio para la gestión de comedores escolares.</p>
+                    <button class="btn-ver" data-proyecto="comedgo">Ver más</button>
+                    <p class="detalle-proyecto oculto" id="detalle-comedgo">
+                        Sistema en desarrollo enfocado en el control y administración de comedores escolares.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion">
+            <h2>Contacto</h2>
+            <p>Podés contactarme mediante GitHub o correo electrónico.</p>
+
+            <form id="formContacto" class="formulario">
+                <input type="text" id="nombre" placeholder="Tu nombre">
+                <input type="email" id="email" placeholder="Tu correo electrónico">
+                <textarea id="mensaje" placeholder="Escribí tu mensaje"></textarea>
+                <button type="submit" class="btn-accion">Enviar</button>
+            </form>
+
+            <p id="respuestaFormulario" class="respuesta"></p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Federico Fernández | Portfolio personal</p>
+        <p>GitHub: <a href="#" target="_blank">Tu usuario de GitHub</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
