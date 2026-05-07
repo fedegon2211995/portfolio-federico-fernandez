@@ -162,3 +162,35 @@ body {
     margin-bottom: 15px;
     border: 3px solid white;
 }
+
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+    border: 2px solid #007bff;
+}
+
+
+#btnTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}

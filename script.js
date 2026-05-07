@@ -68,3 +68,22 @@ form.addEventListener("submit", (e) => {
 
     form.reset();
 });
+
+
+const fecha = document.getElementById("fecha");
+
+const hoy = new Date();
+
+fecha.textContent =
+    "Fecha actual: " + hoy.toLocaleDateString();
+
+
+
+const btnTop = document.getElementById("btnTop");
+
+btnTop.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});
